@@ -45,7 +45,7 @@ function createEmployee(salary: number | string) {
   return new Teacher();
 }
 
-export function isDirector(employee: Director | Teacher): employee is Director {
+export function isDirector(employee): employee is Director {
   return (employee as Director) !== undefined;
 }
 
